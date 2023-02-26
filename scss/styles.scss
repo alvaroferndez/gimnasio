@@ -1,0 +1,24 @@
+@import './variables';
+@import './mixin';
+@import './base';
+
+@import './layouts/header';
+@import './layouts/nav';
+@import './layouts/landing-page';
+@import './layouts/main-maquinas';
+@import './layouts/detalle';
+@import './layouts/main-detalle';
+@import './layouts/footer';
+
+@import './components/informacion';
+@import './components/carrusel';
+@import './components/maquinas';
+@import './components/navegacion';
+@import './components/contenido-detalle';
+@import './components/imagen-detalle';
+@import './components/footer-contenido';
+@import './components/footer-redes';
+@import './components/entrenamiento-carrusel';
+@import './components/galeria';
+@import './components/card';
+@import './components/prueba';

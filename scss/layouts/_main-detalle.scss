@@ -1,0 +1,36 @@
+/// Layout main-detalle
+
+.main-detalle{
+      /*disposion*/
+      @include flexbox();
+
+      /*tamaño*/
+      height: 69vh;
+
+      /*margenes*/
+      margin-top: $margen-comun;
+
+      .contenedor-detalle{
+            /*disposicion*/
+            @include flexbox(row-reverse);
+
+            /*tamaño*/
+            height: 100%;
+            width: 80%;
+      }
+
+      .imagen-detalle{
+            height: 100%;
+      }
+}
+
+@media (max-width: 1150px) {
+      .main-detalle{
+            .contenedor-detalle{
+                  /*disposicion*/
+                  flex-direction: column-reverse;
+            }
+            /*tamaño*/
+            height: min-content;
+      }
+}

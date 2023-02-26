@@ -1,0 +1,132 @@
+/// Layout nav
+
+.enlace-secciones{
+      /*disposicion*/
+      grid-row: 1 / 2;
+      grid-column: 2 / 4;
+      @include flexbox();
+
+      /*decoracion*/
+      list-style: none; 
+      text-decoration: none;
+
+      li{
+            /*margenes*/
+            padding: 40px;
+
+            /*decoracion*/
+            color: obtenerColor(color-letra-blanca);
+      }
+}
+
+.menu-hamburguesa{
+      /*disposicion*/
+      grid-row: 1 / 2;
+      grid-column: 2 / 4;
+      display: none;
+
+      .enlace-secciones-hamburguesa{
+            /*disposicion*/
+            @include flexbox(column,flex-start);
+
+            li{
+                  /*decoracion*/
+                  color: obtenerColor(color-letra-blanca);
+            }
+      }
+      #circulo{
+            /*tamaño*/
+            width: 50px;
+            height: 50px;
+      
+            /*disposicion*/
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+      
+            /*decoracion*/
+            clip-path: circle();
+
+            .linea{
+                  /*tamaño*/
+                  height: 5px;
+                  width: 30px;
+            
+                  /*decoracion*/
+                  background-color: rgb(255, 255, 255);
+                  border-radius: 5px;
+                  margin: 2px;
+                  transition: all 1.5s;
+            }
+            
+            .linea_abierta{
+                  height: 5px;
+                  width: 30px;
+                  margin: 0;
+                  border-radius: 5px;
+                  background-color: white;
+            }
+            
+            .linea_abierta:nth-child(3){
+                  transform:rotate(675deg) ;
+                  transition: all 1.5s;
+            }
+            
+            .linea_abierta:nth-child(2){
+                  display: none;
+            }
+            
+            .linea_abierta:nth-child(1){
+                  transform: translateY(5px) rotate(-675deg) ;
+                  transition: all 1.5s;
+            }  
+      }
+}
+
+.contenedor-logo{
+      /*disposicion*/
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      align-self: center;
+      justify-self: center;
+
+      /*tamaño*/
+      height: 60%;
+
+      img{
+            height: 100%;
+      }
+}
+
+.redes{
+      /*disposicon*/
+      grid-column: 4 / 5;
+      grid-row: 1 / 2;
+      align-self: center;
+      justify-self: center;
+
+      i{
+            /*decoracion*/
+            color: obtenerColor(color-letra-blanca);
+      }
+}
+
+@media (max-width: 850px){
+      .menu-hamburguesa{
+            @include flexbox();
+
+            #circulo{
+                  grid-column: 1 / -1;
+                  grid-row: 1 / 2;
+                  display: flex;
+            }
+
+            .enlace-secciones-hamburguesa{
+                  display: none;
+            }
+      }
+      
+      .enlace-secciones{
+            display: none !important;
+      }
+}

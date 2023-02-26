@@ -1,0 +1,174 @@
+/// Mixin para añadir al header una disposicion de grid
+/// @example
+/// header{
+///   @include gridHeader(4,1);
+/// }
+/// @param {string} $columnas - Número de columnas del grid
+/// @param {string} $filas - Número de filas del grid
+/// @param {string} $aling - Alineación vertical del grid
+/// @param {string} $justify - Alineación horizontal del grid
+
+@mixin gridHeader($columnas, $filas, $aling:normal, $justify:normal){
+      display: grid;
+      grid-template-columns: repeat($columnas,1fr);
+      grid-template-rows: repeat($filas,20vh);
+      align-content: $aling;
+      justify-content: $justify;
+}
+
+/// Mixin para añadir una disposicion de grid
+/// @example
+/// .main{
+///   @include grid(6,4,20vh,min-content);
+/// }
+/// @param {string} $columnas - Número de columnas del grid
+/// @param {string} $filas - Número de filas del grid
+/// @param {string} $primera - Tamaño de la primera fila del grid
+/// @param {string} $ultima - Tamaño de la última fila del grid
+/// @param {string} $filas - Número de filas del grid
+/// @param {string} $aling - Alineación vertical del grid
+/// @param {string} $justify - Alineación horizontal del grid
+
+@mixin grid($columnas, $filas, $primera, $ultima, $aling:center, $justify:center){
+      display: grid;
+      grid-template-columns: repeat($columnas,1fr);
+      grid-template-rows: $primera repeat($filas,max-content) $ultima;
+      align-content: $aling;
+      justify-content: $justify;
+}
+
+/// Mixin para posicionar un hijo de un flex o grid
+/// @example
+/// .informacion{
+///   @include posicionarHijo(center,center);
+/// }
+/// @param {string} $aling - Alineación vertical del hijo
+/// @param {string} $justify - Alineación horizontal del hijo
+
+@mixin posicionarHijo($aling,$justify){
+      align-self: $aling;
+      justify-self: $justify;
+}
+
+
+/// Mixin para añadir una disposicion de flex
+/// @example
+/// footer{
+///   &-contenido{
+///         @include flexbox(row,flex-start);
+///   }
+/// }
+/// @param {string} $direccion - Direccion de los hijos del flex
+/// @param {string} $aling - Alineación vertical del flex
+/// @param {string} $justify - Alineación horizontal del flex
+
+@mixin flexbox($direction:row, $aling:center, $justify:center){
+      display: flex;
+      flex-direction: $direction;
+      align-items: $aling;
+      justify-content: $justify;
+}
+
+
+/// Mixin para añadir estilos a una lista
+/// @example
+/// ul{
+///    @include lista(obtenerColor(color-li));
+/// }
+/// @param {string} $color - Color de la letra de la lista
+
+@mixin lista($color){
+      list-style: none;
+
+      padding: 0;
+
+      a{
+            /*decoracion*/
+            text-decoration: none;
+
+            color:$color;
+
+            li{
+                  &:hover{
+                        color:obtenerColor(color-hover);
+                  }
+            }
+      }
+}
+
+
+/// Mixin para añadir un fondo al carrusel y posicionarlo
+/// @example
+/// .carrusel{
+///    @include carrusel('https://www.tugimnasio.es/wp-content/uploads/2021/07/gimnasio-fitnesspark-intermodal-bilbao.jpg',center);
+/// }
+/// @param {string} $url - Url de la foto del carrusel
+/// @param {string} $alineacion - Alineacion del texto de dentro del carrusel
+
+@mixin carrusel($url,$alineacion){
+      /*disposicion*/
+      grid-column: 1 / 7;
+      @include flexbox();
+
+      height: 80vh;
+
+      /*decoracion*/
+      background-image: url($url);
+      background-size: cover;
+      background-repeat:no-repeat;
+      background-attachment: fixed;
+
+      &-contenido {
+            /*disposicion*/
+            align-self: center;
+            
+
+            /*tamaño*/
+            width: 70%;
+
+            * {
+                  color: white;
+                  text-align: $alineacion;
+            }
+      }
+}
+
+
+/// Mixin para añadir estilos a un boton
+/// @example
+/// button{
+///    @include boton();
+/// }
+
+@mixin boton(){
+      /*posicion*/
+      position: relative;
+
+      /*tamaño*/
+      font-size: 1rem;
+      font-weight: 600;
+
+      /*margenes*/
+      padding: 3% 6%;
+      
+      /*decoracion*/
+      background: #fd0;
+      border: none;
+      color: #666;
+      cursor: pointer;
+      display: inline-block;
+      font-family: "Montserrat",sans-serif;
+      line-height: 1em;
+      outline: none;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      transition: all 0.2s;
+      vertical-align: middle;
+
+      &:hover{
+            /*decoracion*/
+            filter: contrast(75%);
+      }
+}

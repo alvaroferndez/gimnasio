@@ -1,0 +1,7 @@
+/// Componente carrusel-entrenamiento
+
+.carrusel-entrenamiento{
+      /*disposicion*/
+      grid-row: 2 / 3;
+      @include carrusel('https://www.mcfit.com/uploads/pics/Mobil_3_Training_04.jpg',start);
+}

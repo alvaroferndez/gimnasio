@@ -1,0 +1,24 @@
+/// Componente galeria
+
+.galeria{
+      /*disposicion*/
+      grid-column: 2 / 6;
+      grid-row: 3 / 4;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-auto-flow: row;
+}
+
+@media (max-width: 1000px) {
+      .galeria{
+            /*disposicion*/
+            grid-template-columns: repeat(2,1fr);
+      }
+}
+
+@media (max-width: 650px) {
+      .galeria{
+            /*disposicion*/
+            grid-template-columns: repeat(1,1fr);
+      }
+}

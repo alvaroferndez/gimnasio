@@ -1,0 +1,35 @@
+/// Componente navegacion
+
+.navegacion{
+      /*disposicion*/
+      grid-row: 3 / 4;
+      grid-column: 2 / 6;
+      @include flexbox();
+
+      /*margenes*/
+      margin-top: 15%;
+      margin-bottom: 15%;
+
+      div{
+            /*disposicion*/
+            @include flexbox(row);
+
+            /*tamaño*/
+            width: 100%;
+            height: 100%;
+
+            a{
+                  /*disposicion*/
+                  @include flexbox(row);
+
+                  /*tamaño*/
+                  width: 33%;
+                  height: 100%;
+                  
+                  img{
+                        width: 30%;
+                        height: 100%;
+                  }
+            }
+      }
+}

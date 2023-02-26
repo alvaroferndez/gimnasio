@@ -1,0 +1,30 @@
+/// Componente footer-contenido
+
+.footer{
+      &-contenido{
+            /*disposicion*/
+            @include flexbox(row,flex-start);
+
+            section{
+                  /*margenes*/
+                  margin: $margen-comun;
+
+                  h4{
+                        /*decoracion*/
+                        color:obtenerColor(color-letra-blanca);
+                  }
+            }
+      }
+} 
+
+@media (max-width: 1000px) {
+      .footer{
+            &-contenido{
+                  /*disposicion*/
+                  @include flexbox(column,flex-start);
+
+                  /*tamaño*/
+                  width: 50%;
+            }
+      }
+}

@@ -1,0 +1,33 @@
+/// Estilos generales del body
+body{
+
+      /*margenes*/
+      margin: 0;
+
+      /*decoracion*/
+      font-family: obtenerFuenteLetra(fuente-principal), sans-serif;
+      font-size: obtenerTamañoLetra(tamaño-principal);
+
+      a{
+            text-decoration: none;
+      }
+
+      h1{
+            /*margin*/
+            margin: 0;
+
+            /*decoracion*/
+            font-family: obtenerFuenteLetra(fuente-h1), sans-serif;
+            color: obtenerColor(color-h1);
+            font-size: obtenerTamañoLetra(tamaño-h1);
+      }
+
+      ul{
+            @include lista(obtenerColor(color-li));
+      }
+}
+
+/// Estilos generales del html
+html{
+      scroll-behavior: smooth;
+}

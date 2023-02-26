@@ -1,0 +1,78 @@
+/// Componente informacion
+
+.informacion{
+      /*disposicion*/
+      grid-column: 2 / 6;
+      grid-row: 2 / 3;
+      @include flexbox();
+      @include posicionarHijo(center,center);
+
+      /*tamaño*/
+      height: 80%;
+
+      /*margenes*/
+      margin-top: $margen-comun + 10;
+
+      &-contenido{
+            /*tamaño*/
+            width: 50%;
+            height: 100%;
+
+            /*disposicon*/
+            @include posicionarHijo(center,center);
+
+            /*margenes*/
+            margin-right: 2%;
+
+            p{
+                  margin: 0;
+            }
+      }
+
+      hr{
+            /*tamaño*/
+            width: 25%;
+
+            /*decoracion*/
+            border: none;
+            border-bottom: 2px solid obtenerColor(color-principal);
+
+            /*margenes*/
+            margin-left: 0%;
+      }
+
+      &-video{
+            /*posicion*/
+            align-self: flex-start;
+
+            /*tamaño*/
+            width: 50%;
+            height: 100%;
+
+            iframe{
+                  /*tamaño*/
+                  width: 100%;
+                  height: 100%;
+            }
+      }
+}
+
+@media (max-width: 800px) {
+      .informacion{
+            /*disposicion*/
+            @include flexbox(column);
+
+            &-contenido{
+                  /*tamaño*/
+                  width: 100%;
+            }
+
+            &-video{
+                  /*tamaño*/
+                  width: 100%;
+
+                  /*margenes*/
+                  margin-top: $margen-comun;
+            }
+      }
+}

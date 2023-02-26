@@ -1,0 +1,66 @@
+/// Componente prueba
+
+.prueba{
+      /*disposicion*/
+      grid-row: 4 / 5;
+      grid-column: 2 / 6;
+      @include flexbox();
+
+      /*margenes*/
+      margin: $margen-comun;
+
+      &-contenido{
+            /*disposicion*/
+            @include flexbox(column,flex-start);
+
+            /*tamaño*/
+            width: 50%;
+            height: 100%;
+
+            >*{
+                  margin: 2%;
+            }
+
+            div{
+                  @include flexbox(column,flex-start)
+            }
+
+            button{
+                  @include boton();
+            }
+      }
+
+      &-imagen{
+            @include flexbox();
+
+            height: 100%;
+
+            img{
+                  width: 100%;
+                  height: 100%;
+            }
+      }
+}
+
+@media (max-width: 1200px) {
+      .prueba{
+            /*disposicion*/
+            flex-direction: column;
+
+            &-contenido{
+                  width: 100%;
+            }
+
+            &-imagen{
+                  width: 80%;
+            }
+      }
+}
+
+@media (max-width: 800px) {
+      .prueba{
+            &-imagen{
+                  width: 100%;
+            }
+      }
+}

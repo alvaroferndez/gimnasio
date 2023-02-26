@@ -1,0 +1,24 @@
+/// Layout header
+
+header{
+      /* disposicion */
+      @include gridHeader(4,1);
+
+      /*tamaño*/
+      width: 100%;
+
+      /*posicion*/
+      position: fixed;
+      z-index: 10;
+
+      /*margenes*/
+      margin: 0;
+
+      /*decoracion*/
+      background-color: obtenerColor(color-header-background);
+
+      nav{
+            @include lista(obtenerColor(color-letra-blanca))
+      }
+}
+

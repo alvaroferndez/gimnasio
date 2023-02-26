@@ -1,0 +1,57 @@
+/// Componente footer-redes
+
+.footer{
+
+      &-redes{
+            /*disposicion*/
+            align-self: center;
+            justify-self: flex-end;
+            @include flexbox(column);
+
+            &-contenedor-logo{
+                  /*tamaño*/
+                  width: 30%;
+                  
+                  a{    
+                        /*tamaño*/
+                        height: 100%;
+                        width: 100%;
+
+                        /*decoracion*/
+                        color: obtenerColor(color-letra-blanca);
+                        text-decoration: none;
+
+                        img{
+                              height: 100%;
+                              width: 100%;   
+                        }
+                  }
+            }
+
+            &-sociales{
+                  /*disposicion*/
+                  @include flexbox();
+
+                  /*tamaño*/
+                  width: 100%;
+                  height: 80%;
+
+                  a{
+                        /*decoracion*/
+                        color: obtenerColor(color-letra-blanca);
+                        text-decoration: none;
+
+                        /*margenes*/
+                        margin: $margen-comun;
+
+                        &:hover{
+                              color: obtenerColor(color-principal);
+                        }
+
+                        i{
+                              font-size: obtenerTamañoLetra(tamaño-h1);
+                        }
+                  }
+            }
+      }
+}

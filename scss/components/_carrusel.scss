@@ -1,0 +1,7 @@
+/// Componente carrusel
+
+.carrusel {
+      /*disposicion*/
+      grid-row: 4 / 5;
+      @include carrusel('https://www.tugimnasio.es/wp-content/uploads/2021/07/gimnasio-fitnesspark-intermodal-bilbao.jpg',center);
+}

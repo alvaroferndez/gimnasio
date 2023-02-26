@@ -1,0 +1,12 @@
+/// Layout main-maquinas
+
+.main{
+      @include grid(6,4,20vh,min-content);
+
+      .fila-1-grid{
+            /*disposicion*/
+            grid-column: 1 / 7;
+            grid-row: 1 / 2;
+      }
+}
+

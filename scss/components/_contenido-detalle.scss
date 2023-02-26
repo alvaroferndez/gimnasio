@@ -1,0 +1,93 @@
+/// Componente contenido-detalle
+
+.contenido-detalle {
+      /*disposicion*/
+      @include flexbox(column);
+
+      width: 100%;
+      height: 100%;
+
+      &-parte1 {
+            /*disposicion*/
+            @include flexbox(column);
+
+            /*tamaño*/
+            width: 80%;
+            height: 50%;
+
+      }
+
+      &-parte2 {
+            /*disposicion*/
+            @include flexbox(column);
+
+            /*tamaño*/
+            width: 80%;
+            height: 50%;
+
+            &-grupos-musculares {
+                  /*disposicion*/
+                  @include flexbox();
+
+                  /*tamaño*/
+                  height: 35%;
+                  width: 100%;
+
+                  &-principal,
+                  &-indirectos {
+                        /*tamaño*/
+                        width: 50%;
+                        height: 100%;
+
+                        text-align: center;
+
+                        h3 {
+                              height: 10%;
+                        }
+
+                        div {
+
+                              @include flexbox(row, center, space-around);
+
+                              height: 60%;
+                              width: 100%;
+
+                              img {
+                                    width: fit-content;
+                                    height: 100%;
+                              }
+                        }
+                  }
+
+                  &-principal {
+                        div {
+                              @include flexbox();
+                        }
+                  }
+            }
+
+            &-implementacion {
+                  padding-top: 2%;
+            }
+      }
+
+}
+
+@media (max-width: 1150px) {
+      .contenido-detalle {
+            &-parte2 {
+                  &-grupos-musculares {
+
+                        &-principal,
+                        &-indirectos {
+                              div {
+                                    img {
+                                          width: 50%;
+                                          height: 100%;
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+}

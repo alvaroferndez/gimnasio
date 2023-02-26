@@ -1,0 +1,98 @@
+/// Proyecto: Buking.com
+/// @author Álvaro Fernández Domingo
+
+/// Fuentes para las letras
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/// Margen común de la página
+$margen-comun:5%;
+
+/// Lista de fuentes
+/// @group fuentes
+$fuentes-letra:(
+      fuente-principal:'Montserrat',
+      fuente-h1:'Poppins',
+);
+
+/// Lista de colores
+/// @group colores
+$colores: (
+      color-principal:#F3D33C,
+      color-h1:#3b444b,
+      color-letra-oscuro: black,
+      color-letra-blanca: white,
+      color-hover: #F9CF13,
+      color-header-background: #3B444B,
+      color-li: #8c8e90,
+      color-card: rgba(36,47,58,0.9),
+      color-card-hover: #EECE02,
+);
+
+/// Lista de tamaños de letra
+/// @group tamaños
+$tamaños-letra:(
+      tamaño-principal:16px,
+      tamaño-h1:28px,
+);
+
+/// Lista de imagenes del card
+/// @group imagenes
+$imagenes-card:
+      'https://www.mcfit.com/uploads/pics/specials-slingzone_04.jpg',
+      'https://www.mcfit.com//uploads/pics/specials-cage_04.jpg',
+      'https://www.mcfit.com//uploads/pics/specials-boxworkout_04.jpg',
+      'https://www.mcfit.com/uploads/pics/specials-express_04.jpg',
+      'https://www.mcfit.com/uploads/pics/specials-ruecken_04.jpg',
+      'https://www.mcfit.com/uploads/pics/specials-core_04.jpg',
+      'https://www.mcfit.com/uploads/pics/specials-kinesis_04.jpg',
+      'https://www.mcfit.com/uploads/pics/specials-shapeit_04.jpg',
+      'https://www.mcfit.com/uploads/pics/freiegewichte_20.jpg',
+;
+
+
+/// Función que devuelve un color de la lista $colores
+/// @group colores
+/// @param {string} $color - nombre del color de la lista $colores
+/// @return {color} - color en hexadecimal
+
+@function obtenerColor($color){
+      @return map-get($colores, $color);
+}
+
+
+/// Función que devuelve un tamaño de la lista $tamaños-letra
+/// @group tamaños
+/// @param {string} $tamaño - nombre del tamaño de la lista $tamaños-letra
+/// @return {tamaño} - tamaño en px
+
+@function obtenerTamañoLetra($tamaño){
+      @return map-get($tamaños-letra, $tamaño);
+}
+
+
+/// Función que devuelve una fuente de la lista $fuentes-letra
+/// @group fuentes
+/// @param {string} $fuente - nombre de la fuente de la lista $fuentes-letra
+/// @return {fuente} - fuente
+
+@function obtenerFuenteLetra($fuente){
+      @return map-get($fuentes-letra, $fuente);
+}
+
+
+/// Función que devuelve una imagen de la lista $imagenes-card
+/// @group imagenes
+/// @param {string} $numero - numero de la imagen de la lista $imagenes-card
+/// @return {imagen} - url de la imagen
+
+@function recorrerLista($numero){
+      @return nth($imagenes-card,$numero);
+}
+
+@for $i from 1 through 9{
+      .card:nth-child(#{$i}){
+            background-image: url(recorrerLista($i));
+            opacity: 0.8;
+      }
+}

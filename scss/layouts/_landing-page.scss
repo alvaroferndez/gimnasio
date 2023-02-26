@@ -1,0 +1,132 @@
+/// Layout landing-page
+
+.contenedor-landing-page{
+      /*disposicion*/
+      @include flexbox();
+
+      /*tamaño*/
+      width: 100vw;
+      height: 99.8vh;
+
+      /*decoracion*/
+      background-color: #ffd50000;
+
+      .enlaces{
+            /*disposicion*/
+            @include grid(3,7,0,0);
+
+            /*tamaño*/
+            width: 80%;
+            height: 80%;
+
+            /*margenes*/
+            margin: 3%;
+      }
+
+      .enlace{
+            /*disposicion*/
+            align-self: center;
+            justify-self: center;
+
+            /*tamaño*/
+            width: 70%;
+            height: 100%;
+            border-radius: 50%;
+
+            /*decoracion*/
+            background-color: white;
+            
+            img{
+                  /*tamaño*/
+                  border-radius: 50%;
+                  height: 100%;
+                  width: 100%;
+            }
+
+            a{
+                  /*disposicion*/
+                  @include flexbox(row,center,center);
+
+                  /*tamaño*/
+                  height: 100%;
+
+                  /*decoracion*/
+                  color:obtenerColor(color-principal);
+                  
+                  i{
+                        /*tamaño*/
+                        font-size:56px;
+
+                        /*transiciones*/
+                        transition: all 0.5s;
+                  }
+            }
+
+            a:hover{
+                  i{
+                        /*tamaño*/
+                        font-size:112px;
+
+                        /*transiciones*/
+                        transition: all 0.5s;
+                  }
+            }
+      }
+
+      .enlace-maquinas{
+            /*disposicion*/
+            grid-row: 1 / 4;
+            grid-column: 1 / 2;
+      }
+
+      .enlace-actividades{
+            /*disposicion*/
+            grid-row: 1 / 4;
+            grid-column: 3 / 4;
+      }
+
+      .enlace-logo{
+            /*disposicion*/
+            grid-row: 3 / 6;
+            grid-column: 2 / 3;
+      }
+
+      .enlace-entrenamiento{
+            /*disposicion*/
+            grid-row: 5 / 8;
+            grid-column: 1 / 2;
+      }
+
+      .enlace-actividades-aire-libre{
+            /*disposicion*/
+            grid-row: 5 / 8;
+            grid-column: 3 / 4;
+      }
+}
+
+@media (max-width: 800px) {
+      .enlace-maquinas{
+            /*disposicion*/
+            grid-row: 1 / 3 !important;
+      }
+
+      .enlace-actividades{
+            /*disposicion*/
+            grid-row: 1 / 3 !important;
+      }
+
+      .enlace-logo{
+            /*disposicion*/
+            grid-row: 3 / 6 !important;
+      }
+
+      .enlace-entrenamiento{
+            /*disposicion*/
+            grid-row: 6 / 8 !important;
+      }
+
+      .enlace-actividades-aire-libre{
+            /*disposicion*/
+            grid-row: 6 / 8 !important;
+      }
+}

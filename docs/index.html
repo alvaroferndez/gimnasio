@@ -1,0 +1,2751 @@
+<!doctype html>
+
+
+
+
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8" />
+
+<title>SassDoc - v1.0.0</title>
+<link rel="stylesheet" href="assets/css/main.css" />
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width">
+<meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+
+<!-- Thanks to Sass-lang.com for the icons -->
+<link href="http://sass-lang.com/favicon.ico" rel="shortcut icon">
+
+</head>
+<body>
+
+  
+  <aside class="sidebar" role="nav">
+    
+  <div class="sidebar__header">
+  <h1 class="sidebar__title">
+    
+      SassDoc - 1.0.0
+    
+  </h1>
+</div>
+
+<div class="sidebar__body">
+  
+  
+    <button type="button" class="btn-toggle  js-btn-toggle" data-alt="Open all">Close all</button>
+
+    
+    
+      <p class="sidebar__item  sidebar__item--heading" data-slug="undefined"><a href="#undefined">Ungrouped</a></p>
+
+      
+      
+        <div>
+
+        
+        
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="undefined-function"><a href="#undefined-function">functions</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="obtenerColor" data-type="function">
+              <a href="#function-obtenerColor">obtenerColor
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="obtenerTama" data-type="function">
+              <a href="#function-obtenerTama">obtenerTama
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="obtenerFuenteLetra" data-type="function">
+              <a href="#function-obtenerFuenteLetra">obtenerFuenteLetra
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="recorrerLista" data-type="function">
+              <a href="#function-recorrerLista">recorrerLista
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        
+      
+        
+
+        
+        
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="gridHeader" data-type="mixin">
+              <a href="#mixin-gridHeader">gridHeader
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="grid" data-type="mixin">
+              <a href="#mixin-grid">grid
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="posicionarHijo" data-type="mixin">
+              <a href="#mixin-posicionarHijo">posicionarHijo
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="flexbox" data-type="mixin">
+              <a href="#mixin-flexbox">flexbox
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="lista" data-type="mixin">
+              <a href="#mixin-lista">lista
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="carrusel" data-type="mixin">
+              <a href="#mixin-carrusel">carrusel
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="boton" data-type="mixin">
+              <a href="#mixin-boton">boton
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        
+      
+        
+
+        
+        
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="undefined-variable"><a href="#undefined-variable">variables</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="margen-comun" data-type="variable">
+              <a href="#variable-margen-comun">margen-comun
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        </div>
+      
+
+    
+      <p class="sidebar__item  sidebar__item--heading" data-slug="colores"><a href="#colores">colores</a></p>
+
+      
+      
+        <div>
+
+        
+        
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="colores-variable"><a href="#colores-variable">variables</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="colores" data-type="variable">
+              <a href="#variable-colores">colores
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        </div>
+      
+
+    
+      <p class="sidebar__item  sidebar__item--heading" data-slug="fuentes"><a href="#fuentes">fuentes</a></p>
+
+      
+      
+        <div>
+
+        
+        
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="fuentes-variable"><a href="#fuentes-variable">variables</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="fuentes-letra" data-type="variable">
+              <a href="#variable-fuentes-letra">fuentes-letra
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        </div>
+      
+
+    
+      <p class="sidebar__item  sidebar__item--heading" data-slug="imagenes"><a href="#imagenes">imagenes</a></p>
+
+      
+      
+        <div>
+
+        
+        
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="imagenes-variable"><a href="#imagenes-variable">variables</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="imagenes-card" data-type="variable">
+              <a href="#variable-imagenes-card">imagenes-card
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        </div>
+      
+
+    
+      <p class="sidebar__item  sidebar__item--heading" data-slug="tamaños"><a href="#tamaños">tamaños</a></p>
+
+      
+      
+        <div>
+
+        
+        
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="tamaños-variable"><a href="#tamaños-variable">variables</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="tama" data-type="variable">
+              <a href="#variable-tama">tama
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        </div>
+      
+
+    
+  
+</div>
+
+
+  </aside>
+
+  
+  <article class="main" role="main">
+
+    
+    <header class="header" role="banner">
+  <div class="container">
+  
+
+    <div class="sassdoc__searchbar  searchbar">
+       <label for="js-search-input" class="visually-hidden">Search</label>
+       <div class="searchbar__form" id="js-search">
+         <input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search" />
+         <ul class="searchbar__suggestions" id="js-search-suggestions"></ul>
+       </div>
+     </div>
+  </div>
+</header>
+
+
+    <div class="container">
+    
+
+  
+  
+
+    
+    
+      <section class="main__section">
+        <h1 class="main__heading" id="undefined">Ungrouped</h1>
+
+        
+        
+
+          
+          
+
+          
+          
+            <section class="main__sub-section" id="undefined-function">
+              <h2 class="main__heading--secondary">functions</h2>
+
+              
+              
+                <section class="main__item  item" id="function-obtenerColor">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-obtenerColor">obtenerColor</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function obtenerColor() { 
+      @return map-get($colores, $color);
+ }"
+    data-collapsed="@function obtenerColor() { ... }"><code>@function obtenerColor() { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <p>None.</p>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <p class="sassdoc__item-description"><p>color en hexadecimal</p>
+
+  
+    Color
+  
+  </p>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li>
+        <a href="#variable-colores"><code>colores</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled  list-inline">
+    
+
+    <li><a href="#mixin-lista"><code>lista</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="function-obtenerTama">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-obtenerTama">obtenerTama</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function obtenerTama() { 
+      @return map-get($tamaños-letra, $tamaño);
+ }"
+    data-collapsed="@function obtenerTama() { ... }"><code>@function obtenerTama() { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <p>None.</p>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <p class="sassdoc__item-description"><p>tamaño en px</p>
+
+  
+    Tamaño
+  
+  </p>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li>
+        <a href="#variable-tama"><code>tama</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="function-obtenerFuenteLetra">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-obtenerFuenteLetra">obtenerFuenteLetra</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function obtenerFuenteLetra() { 
+      @return map-get($fuentes-letra, $fuente);
+ }"
+    data-collapsed="@function obtenerFuenteLetra() { ... }"><code>@function obtenerFuenteLetra() { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <p>None.</p>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <p class="sassdoc__item-description"><p>fuente</p>
+
+  
+    Fuente
+  
+  </p>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li>
+        <a href="#variable-fuentes-letra"><code>fuentes-letra</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="function-recorrerLista">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-recorrerLista">recorrerLista</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function recorrerLista() { 
+      @return nth($imagenes-card,$numero);
+ }"
+    data-collapsed="@function recorrerLista() { ... }"><code>@function recorrerLista() { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <p>None.</p>
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Returns</h3>
+
+  <p class="sassdoc__item-description"><p>url de la imagen</p>
+
+  
+    Imagen
+  
+  </p>
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li>
+        <a href="#variable-imagenes-card"><code>imagenes-card</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+            </section>
+          
+        
+
+          
+          
+
+          
+          
+            <section class="main__sub-section" id="undefined-mixin">
+              <h2 class="main__heading--secondary">mixins</h2>
+
+              
+              
+                <section class="main__item  item" id="mixin-gridHeader">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-gridHeader">gridHeader</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin gridHeader($justify) { 
+      display: grid;
+      grid-template-columns: repeat($columnas,1fr);
+      grid-template-rows: repeat($filas,20vh);
+      align-content: $aling;
+      justify-content: $justify;
+ }"
+    data-collapsed="@mixin gridHeader($justify) { ... }"><code>@mixin gridHeader($justify) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$justify</code></th>
+          <td data-label="desc"><p>Alineación horizontal del grid</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-grid">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-grid">grid</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin grid($justify) { 
+      display: grid;
+      grid-template-columns: repeat($columnas,1fr);
+      grid-template-rows: $primera repeat($filas,max-content) $ultima;
+      align-content: $aling;
+      justify-content: $justify;
+ }"
+    data-collapsed="@mixin grid($justify) { ... }"><code>@mixin grid($justify) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$justify</code></th>
+          <td data-label="desc"><p>Alineación horizontal del grid</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-posicionarHijo">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-posicionarHijo">posicionarHijo</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin posicionarHijo($justify) { 
+      align-self: $aling;
+      justify-self: $justify;
+ }"
+    data-collapsed="@mixin posicionarHijo($justify) { ... }"><code>@mixin posicionarHijo($justify) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$justify</code></th>
+          <td data-label="desc"><p>Alineación horizontal del hijo</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-flexbox">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-flexbox">flexbox</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin flexbox($justify) { 
+      display: flex;
+      flex-direction: $direction;
+      align-items: $aling;
+      justify-content: $justify;
+ }"
+    data-collapsed="@mixin flexbox($justify) { ... }"><code>@mixin flexbox($justify) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$justify</code></th>
+          <td data-label="desc"><p>Alineación horizontal del flex</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled  list-inline">
+    
+
+    <li><a href="#mixin-carrusel"><code>carrusel</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-lista">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-lista">lista</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin lista($color) { 
+      list-style: none;
+
+      padding: 0;
+
+      a{
+            /*decoracion*/
+            text-decoration: none;
+
+            color:$color;
+
+            li{
+                  &amp;:hover{
+                        color:obtenerColor(color-hover);
+                  }
+            }
+      }
+ }"
+    data-collapsed="@mixin lista($color) { ... }"><code>@mixin lista($color) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$color</code></th>
+          <td data-label="desc"><p>Color de la letra de la lista</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li>
+        <a href="#function-obtenerColor"><code>obtenerColor</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-carrusel">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-carrusel">carrusel</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin carrusel($alineacion) { 
+      /*disposicion*/
+      grid-column: 1 / 7;
+      @include flexbox();
+
+      height: 80vh;
+
+      /*decoracion*/
+      background-image: url($url);
+      background-size: cover;
+      background-repeat:no-repeat;
+      background-attachment: fixed;
+
+      &amp;-contenido {
+            /*disposicion*/
+            align-self: center;
+            
+
+            /*tamaño*/
+            width: 70%;
+
+            * {
+                  color: white;
+                  text-align: $alineacion;
+            }
+      }
+ }"
+    data-collapsed="@mixin carrusel($alineacion) { ... }"><code>@mixin carrusel($alineacion) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$alineacion</code></th>
+          <td data-label="desc"><p>Alineacion del texto de dentro del carrusel</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li>
+        <a href="#mixin-flexbox"><code>flexbox</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-boton">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-boton">boton</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin boton() { 
+      /*posicion*/
+      position: relative;
+
+      /*tamaño*/
+      font-size: 1rem;
+      font-weight: 600;
+
+      /*margenes*/
+      padding: 3% 6%;
+      
+      /*decoracion*/
+      background: #fd0;
+      border: none;
+      color: #666;
+      cursor: pointer;
+      display: inline-block;
+      font-family: &quot;Montserrat&quot;,sans-serif;
+      line-height: 1em;
+      outline: none;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      transition: all 0.2s;
+      vertical-align: middle;
+
+      &amp;:hover{
+            /*decoracion*/
+            filter: contrast(75%);
+      }
+ }"
+    data-collapsed="@mixin boton() { ... }"><code>@mixin boton() { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>}</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <p>None.</p>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+            </section>
+          
+        
+
+          
+          
+
+          
+          
+            <section class="main__sub-section" id="undefined-variable">
+              <h2 class="main__heading--secondary">variables</h2>
+
+              
+              
+                <section class="main__item  item" id="variable-margen-comun">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#variable-margen-comun">margen-comun</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>$margen-comun: 5%;</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Margen común de la página</p>
+</div>
+
+
+  
+    
+    
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+            </section>
+          
+        
+
+      </section>
+    
+      <section class="main__section">
+        <h1 class="main__heading" id="colores">colores</h1>
+
+        
+        
+
+          
+          
+
+          
+          
+            <section class="main__sub-section" id="colores-variable">
+              <h2 class="main__heading--secondary">variables</h2>
+
+              
+              
+                <section class="main__item  item" id="variable-colores">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#variable-colores">colores</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>$colores: (
+      color-principal:#F3D33C,
+      color-h1:#3b444b,
+      color-letra-oscuro: black,
+      color-letra-blanca: white,
+      color-hover: #F9CF13,
+      color-header-background: #3B444B,
+      color-li: #8c8e90,
+      color-card: rgba(36,47,58,0.9),
+      color-card-hover: #EECE02,
+);</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled  list-inline">
+    
+
+    <li><a href="#function-obtenerColor"><code>obtenerColor</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+            </section>
+          
+        
+
+      </section>
+    
+      <section class="main__section">
+        <h1 class="main__heading" id="fuentes">fuentes</h1>
+
+        
+        
+
+          
+          
+
+          
+          
+            <section class="main__sub-section" id="fuentes-variable">
+              <h2 class="main__heading--secondary">variables</h2>
+
+              
+              
+                <section class="main__item  item" id="variable-fuentes-letra">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#variable-fuentes-letra">fuentes-letra</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>$fuentes-letra: (
+      fuente-principal:&#39;Montserrat&#39;,
+      fuente-h1:&#39;Poppins&#39;,
+);</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled  list-inline">
+    
+
+    <li><a href="#function-obtenerFuenteLetra"><code>obtenerFuenteLetra</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+            </section>
+          
+        
+
+      </section>
+    
+      <section class="main__section">
+        <h1 class="main__heading" id="imagenes">imagenes</h1>
+
+        
+        
+
+          
+          
+
+          
+          
+            <section class="main__sub-section" id="imagenes-variable">
+              <h2 class="main__heading--secondary">variables</h2>
+
+              
+              
+                <section class="main__item  item" id="variable-imagenes-card">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#variable-imagenes-card">imagenes-card</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>$imagenes-card: &#39;https://www.mcfit.com/uploads/pics/specials-slingzone_04.jpg&#39;,
+      &#39;https://www.mcfit.com//uploads/pics/specials-cage_04.jpg&#39;,
+      &#39;https://www.mcfit.com//uploads/pics/specials-boxworkout_04.jpg&#39;,
+      &#39;https://www.mcfit.com/uploads/pics/specials-express_04.jpg&#39;,
+      &#39;https://www.mcfit.com/uploads/pics/specials-ruecken_04.jpg&#39;,
+      &#39;https://www.mcfit.com/uploads/pics/specials-core_04.jpg&#39;,
+      &#39;https://www.mcfit.com/uploads/pics/specials-kinesis_04.jpg&#39;,
+      &#39;https://www.mcfit.com/uploads/pics/specials-shapeit_04.jpg&#39;,
+      &#39;https://www.mcfit.com/uploads/pics/freiegewichte_20.jpg&#39;,;</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled  list-inline">
+    
+
+    <li><a href="#function-recorrerLista"><code>recorrerLista</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+            </section>
+          
+        
+
+      </section>
+    
+      <section class="main__section">
+        <h1 class="main__heading" id="tamaños">tamaños</h1>
+
+        
+        
+
+          
+          
+
+          
+          
+            <section class="main__sub-section" id="tamaños-variable">
+              <h2 class="main__heading--secondary">variables</h2>
+
+              
+              
+                <section class="main__item  item" id="variable-tama">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#variable-tama">tama</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>$tama: (
+      tamaño-principal:16px,
+      tamaño-h1:28px,
+);</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled  list-inline">
+    
+
+    <li><a href="#function-obtenerTama"><code>obtenerTama</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+            </section>
+          
+        
+
+      </section>
+    
+
+  
+
+
+    </div>
+
+    
+    
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      
+        <div class="footer__project-info  project-info">
+          <!-- Name and URL -->
+          
+            <span class="project-info__name">SassDoc</span>
+          
+
+          <!-- Version -->
+          <span class="project-info__version"> - v1.0.0</span>
+
+          <!-- License -->
+          
+          <span class="project-info__license">, under
+            
+              ISC
+            
+            </span>
+          
+        </div>
+      
+
+      
+        <span class="footer__watermark">Built with <a href="https://github.com/SassDoc/sassdoc">SassDoc</a>.</span>
+      
+    </div>
+  </footer>
+
+
+  </article>
+
+
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="assets/js/main.min.js"></script>
+
+</body>
+</html>

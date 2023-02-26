@@ -1,0 +1,12 @@
+/// Layout footer
+
+.footer{
+      /* disposicion */
+      @include flexbox(row,flex-start);
+
+      /*tamaño*/
+      width: 100%;
+
+      /*decoracion*/
+      background-color: obtenerColor(color-header-background);
+}
